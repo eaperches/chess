@@ -1,6 +1,7 @@
 import React from "react";
 import { IUIChessGame } from "../model/Interfaces";
-import Game from "../model/game";
+import Game from "../model/game"
+import { socket } from "../../connections/socket";
 
 type State = {
     gameState: Game,
@@ -22,7 +23,7 @@ class UIChessGame extends React.Component<IUIChessGame, State> {
         })
     }
 
-    movePiece(selectedId: number, finalPosition: ) {
+    movePiece(selectedId: number, finalPosition: any) {
     }
  
     render() {
