@@ -14,3 +14,5 @@ socket.on("createNewGame", (statusUpdate: IStatusUpdate) => {
         + "\nSocket id: " + statusUpdate.mySocketId
     )
 })
+
+export { socket, mySocketId }
